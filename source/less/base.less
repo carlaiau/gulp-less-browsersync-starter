@@ -1,0 +1,19 @@
+@import: "variables";
+
+body {
+  background-color: @primary;
+  color: @secondary;
+}
+
+
+.item {
+  background-color: contrast(@primary);
+  width: 100px;
+  // height: 100px;
+  height: ~"calc(100px * 2)";
+  .animated-timing(2s, .5s);
+  // animation-duration: 2s;
+  display: block;
+  .rounded(50px);
+}
+
